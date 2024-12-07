@@ -1,0 +1,389 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+html {
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif, "Poppins";
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+  height: 60px;
+  padding: 10px 40px;
+  justify-content: space-between;
+}
+
+.header h1{
+  padding-top: 13px;
+}
+
+.header img{
+    border-radius: 100%;
+    width: auto;
+    height: 60%;
+    padding: 10px 5px;
+}
+
+.right-content {
+  display: flex;
+  text-align: center;
+}
+
+.right-content .name {
+  padding: 15px 10px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.right-content .name h4 {
+  color: black;
+}
+
+.right-content .name p {
+  color: black;
+  font-size: 10px;
+  margin-top: -11px;
+}
+
+.dropdown{
+  display: inline-block;
+}
+
+
+
+
+.aside {
+  padding: 20px;
+  height: 100vh;
+  width: 250px;
+  background-color: white;
+  position: sticky;
+}
+
+.aside ul {
+  list-style-type: none;
+}
+
+.aside ul li {
+  cursor: pointer;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.aside ul li a {
+  color: black;
+  font-size: 16px;
+  padding: 10px;
+  text-decoration: none;
+  text-wrap: nowrap;
+  font-weight: bold;
+  font-size: .9rem;
+}
+
+.aside ul li a:hover{
+  color: orangered;
+}
+
+.hero-contents {
+  position: relative;
+  background-color: #dcdcdc;
+  border: transparent;
+  display: flex;
+  border-radius: 40px 0 0 0;
+}
+
+.main-sec .box-preview {
+  display: flex;
+}
+.main-sec .box-preview h1 {
+  font-size: 45px;
+}
+
+.box-preview {
+  font-size: 13px;
+  padding-right: 115px;
+  font-weight: 500;
+}
+
+.main-sec {
+  flex: 1;
+  padding: 0 1px;
+  position: relative;
+}
+
+.main-sec .box-preview {
+  justify-content: space-between;
+  padding: 55px 20px 20px 20px;
+}
+
+.container-head {
+  font-weight: 700;
+  font-size: 16px;
+  align-self: self-start;
+}
+
+.total-visitors {
+  position: relative;
+  text-align: center;
+  background: white;
+  border-radius: 15px;
+  width: 20%;
+  height: 20%;
+  padding: 20px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: -7px 11px 5px -2px rgba(158,151,151,0.75);
+
+}
+.overview-content {
+  position: relative;
+}
+.overview-content > h2 {
+  font-size: 60px;
+}
+.percent-box {
+  position: absolute;
+  top: -15px;
+  right: 5px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  border-radius: 50px;
+  padding: 6px 8px;
+  border: 1px solid black;
+}
+.percent-box > img {
+  height: 14px;
+  width: 14px;
+}
+.percent-box > p {
+  font-size: 10px;
+  color: black;
+}
+
+
+.total-books {
+  position: relative;
+  text-align: center;
+  background: white;
+  border: transparent;
+  border-radius: 12px;
+  width: 20%;
+  height: 20%;
+  padding: 5px 5px 0 10px;
+}
+
+.borrowed-books {
+  position: relative;
+  text-align: center;
+  background: white;
+  border: transparent;
+  border-radius: 12px;
+  width: 20%;
+  height: 20%;
+  padding: 5px 5px 0 10px;
+}
+
+.overdue-books {
+  position: relative;
+  text-align: center;
+  background: white;
+  border: transparent;
+  border-radius: 12px;
+  width: 20%;
+  height: 20%;
+  padding: 5px 5px 0 10px;
+}
+
+.most-books {
+  background-color: white;
+  border: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-sizing: border-box;
+  padding: 20px;
+  margin: 0 20px;
+  border-radius: 20px;
+  width: 740px;
+  box-shadow: -7px 11px 5px -2px rgba(158,151,151,0.75);
+
+}
+
+.mid-container {
+  display: flex;
+  position: absolute;
+  gap: 10px;
+}
+
+.most-book-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.most-book-title h1 {
+  font-size: 24px;
+}
+.most-book-title a {
+  padding: 15px 20px;
+  border: 2px solid black;
+  border-radius: 15px;
+  color: black;
+  text-decoration: none;
+  font-size: .8rem;
+}
+
+.most-book-title a:hover {
+ background-color: black;
+ transition: 0.3s;
+}
+
+.most-book-title .add-new-user:hover{
+  color: white;
+  transition: 0.3s;
+}
+
+.user-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.header-list {
+  display: flex;
+  padding: 10px 20px;
+}
+
+.header-list p {
+  text-align: center;
+  flex: 1;
+}
+
+.user-list-box {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+
+.user-list-box li {
+  border-radius: 10px;
+  padding: 10px 20px;
+  display: flex;
+  text-align: right;
+}
+
+.user-list-box li:hover {
+  background-color: rgb(227, 227, 227);
+  cursor: pointer;
+}
+
+.user-list-box li > p,
+.user-list-box li > div {
+  flex: 1;
+  text-align: center;
+}
+
+.user-list-box li > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.user-list-box li > div > svg {
+  height: 25px;
+  width: 25px;
+}
+
+.user-list-box > li > div > img {
+  height: 25px;
+  width:  25px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+.mid-container .most-books .see-all {
+  text-align: right;
+  padding: 3px 15px;
+}
+.mid-container .most-books .see-all a {
+  text-decoration: none;
+  color: black;
+  font-size: .9rem;
+  font-weight: bold;
+}
+
+.top-books-container{
+  flex-direction: column;
+  position: absolute;
+  top: 40rem;
+  padding: 0 20px;
+}
+.top-books{
+  margin-top: 30px;
+  margin-bottom: 10px;
+  display: flex;
+  gap: 65px;
+}
+
+.top-books li{
+  list-style: none;
+  text-decoration: none;
+}
+
+
+.top-books li img{
+  height: 165px;
+  width: 160px;
+  border: transparent;
+  border-radius: 13px;
+  transition: transform 0.3 ease, box-shadow .3s ease;
+}
+
+.top-books li img:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 0 0.3;
+}
+
+.top-books li h4{
+  text-align: left;
+  font-size: .9rem
+}
+
+.top-books li p{
+  text-align: left;
+  font-size: .8rem;
+}
+
+
+
+.monthly-visits{
+  position: absolute;
+  height: 600px;
+  width: 99%;
+  top: 930px;
+  flex-direction: column;
+  background-color: white;
+
+
+  border: transparent;
+  border-radius: 20px;
+}
+
+.monthly-visits img{
+  width: 500px;
+  height: 300px;
+}
