@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="admin.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Admin</title>
+  </head>
+  <body>
+    <header class="header">
+      <!-- Logo -->
+      <h1>ADMIN</h1>
+
+      <!--Right Content  -->
+      <div class="right-content">
+        <!-- Notif icon -->
+
+        <!-- Admin Profile -->
+        <img src="img/profile.jpg" alt="Profile" />
+
+        <!-- Name -->
+        <div class="name">
+          <h4>Coronado, Earl David</h4>
+          <p>**** **** 1342</p>
+        </div>
+      </div>
+    </header>
+
+    <div class="hero-contents">
+      <aside class="aside">
+        <ul>
+          <li>
+            <a href="#">Dashboard</a>
+          </li>
+
+          <li>
+            <a href="#">Issue & Return Management</a>
+          </li>
+
+          <li>
+            <a href="#">Member Management</a>
+          </li>
+
+          <li>
+            <a href="#">Library Staff Management</a>
+          </li>
+
+          <li>
+            <a href="#">Feedbacks</a>
+          </li>
+
+          <li>
+            <a href="">Report & Logs</a>
+          </li>
+        </ul>
+      </aside>
+
+      <!-- Drop Bar -->
+
+      <!-- Records -->
+
+      <div class="main-sec">
+        <div class="box-preview">
+          <div class="total-visitors">
+            <p class="container-head">NEW VISITORS</p>
+            <div class="overview-content">
+              <h2>152</h2>
+              <!-- Visitors Percentage -->
+              <div class="percent-box">
+                <img src="img/increase.png" alt="" />
+                <p>15.5%</p>
+              </div>
+            </div>
+          </div>
+          <div class="total-visitors">
+            <p class="container-head">TOTAL BOOKS</p>
+            <div class="overview-content">
+              <h2>5612</h2>
+              <!-- Visitors Percentage -->
+              <div class="percent-box">
+                <img src="img/increase.png" alt="" />
+                <p>23.5%</p>
+              </div>
+            </div>
+          </div>
+          <div class="total-visitors">
+            <p class="container-head">BORROWED BOOKS</p>
+            <div class="overview-content">
+              <h2>172</h2>
+              <!-- Visitors Percentage -->
+              <div class="percent-box">
+                <img src="img/increase.png" alt="" />
+                <p>8.2%</p>
+              </div>
+            </div>
+          </div>
+          <div class="total-visitors">
+            <p class="container-head">OVERDUE BOOKS</p>
+            <div class="overview-content">
+              <h2>13</h2>
+              <!-- Visitors Percentage -->
+              <div class="percent-box">
+                <img src="img/decrease.png" alt="" />
+                <p>2%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tables -->
+
+        <div class="mid-container">
+          <div class="most-books">
+            <div class="most-book-title">
+              <h1>User's List</h1>
+              <a href="#" class="add-new-user"> Add New User</a>
+            </div>
+
+            <div class="user-list">
+              <div class="header-list">
+                <p>User ID</p>
+                <p>User Name</p>
+                <p>Booked Issued</p>
+                <p>Action</p>
+              </div>
+
+              <ul class="user-list-box">
+                <li>
+                  <p>#001</p>
+                  <div>
+                    <img
+                      src="https://images.unsplash.com/photo-1733077151631-93a7e457b97f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8"
+                      alt=""
+                      class=""
+                    />
+                    <p>Cris</p>
+                  </div>
+                  <p>12</p>
+                  <div class="">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                      />
+                    </svg>
+                  </div>
+                </li>
+                <li>
+                  <p>#143</p>
+                  <div>
+                    <img
+                      src="https://images.unsplash.com/photo-1733077151631-93a7e457b97f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8"
+                      alt=""
+                      class=""
+                    />
+                    <p>Main</p>
+                  </div>
+                  <p>12</p>
+                  <div class="">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                      />
+                    </svg>
+                  </div>
+                </li>
+                <li>
+                  <p>#091</p>
+                  <div>
+                    <img
+                      src="https://images.unsplash.com/photo-1733077151631-93a7e457b97f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8"
+                      alt=""
+                      class=""
+                    />
+                    <p>Earl</p>
+                  </div>
+                  <p>1</p>
+                  <div class="">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                      />
+                    </svg>
+                  </div>
+                </li>
+                <li>
+                  <p>#092</p>
+                  <div>
+                    <img
+                      src="https://images.unsplash.com/photo-1733077151631-93a7e457b97f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8"
+                      alt=""
+                      class=""
+                    />
+                    <p>Josh</p>
+                  </div>
+                  <p>12</p>
+                  <div class="">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                      />
+                    </svg>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="see-all">
+              <a href="#">See All</a>
+            </div>
+          </div>
+
+          <div class="top-user">
+            <div class="most-books">
+              <div class="most-book-title">
+                <h1>Book List</h1>
+                <a href="#" class="add-new-user"> Add New Book</a>
+              </div>
+
+              <div class="user-list">
+                <div class="header-list">
+                  <p>Book ID</p>
+                  <p>Title</p>
+                  <p>Available</p>
+                  <p>Action</p>
+                </div>
+
+                <ul class="user-list-box">
+                  <li>
+                    <p>#0-1432-30</p>
+                    <p>Trouble Makers</p>
+                    <p>30</p>
+                    <div class="">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-6"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                        />
+                      </svg>
+                    </div>
+                  </li>
+                  <li>
+                    <p>#0-1322-21</p>
+                    <p>Hello World Goodbye</p>
+                    <p>23</p>
+                    <div class="">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-6"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                        />
+                      </svg>
+                    </div>
+                  </li>
+                  <li>
+                    <p>#0-412-42</p>
+
+                    <p>Aladdin</p>
+
+                    <p>21</p>
+                    <div class="">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-6"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                        />
+                      </svg>
+                    </div>
+                  </li>
+                  <li>
+                    <p>#0-0123-412</p>
+
+                    <p>Retribution</p>
+
+                    <p>17</p>
+                    <div class="">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-6"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
+                        />
+                      </svg>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="see-all">
+                <a href="#">See All</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="top-books-container">
+          <h1>Top Choices</h1>
+          <div class="top-books">
+            <li>
+              <img src="img/book1.jpg" alt="" />
+              <h4>The Great Gatsby</h4>
+              <p>F. Scott Fitzgerald</p>
+            </li>
+
+            <li>
+              <img src="img/book1.jpg" alt="" />
+              <h4>The Great Gatsby</h4>
+              <p>F. Scott Fitzgerald</p>
+            </li>
+
+            <li>
+              <img src="img/book1.jpg" alt="" />
+              <h4>The Great Gatsby</h4>
+              <p>F. Scott Fitzgerald</p>
+            </li>
+
+            <li>
+              <img src="img/book1.jpg" alt="" />
+              <h4>The Great Gatsby</h4>
+              <p>F. Scott Fitzgerald</p>
+            </li>
+
+            <li>
+              <img src="img/book1.jpg" alt="" />
+              <h4>The Great Gatsby</h4>
+              <p>F. Scott Fitzgerald</p>
+            </li>
+
+            <li>
+              <img src="img/book1.jpg" alt="" />
+              <h4>The Great Gatsby</h4>
+              <p>F. Scott Fitzgerald</p>
+            </li>
+
+            <li>
+              <img src="img/book1.jpg" alt="" />
+              <h4>The Great Gatsby</h4>
+              <p>F. Scott Fitzgerald</p>
+            </li>
+          </div>
+        </div>
+
+        <!-- graphs -->
+
+        <div class="monthly-visits">
+          <h1>Monthly Visits</h1>
+          <img src="img/bargraphs.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
