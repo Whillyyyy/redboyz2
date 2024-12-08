@@ -36,7 +36,7 @@
       <aside class="aside">
         <ul>
           <li>
-            <a href="#">Dashboard</a>
+            <a href="admin.html">Dashboard</a>
           </li>
 
           <li>
@@ -48,7 +48,7 @@
           </li>
 
           <li>
-            <a href="#">Library Staff Management</a>
+            <a href="staff.html">Library Staff Management</a>
           </li>
 
           <li>
@@ -414,9 +414,16 @@
 
         <!-- graphs -->
 
-        <div class="monthly-visits">
-          <h1>Monthly Visits</h1>
-          <img src="img/bargraphs.png" alt="" />
+        <div class="graphs">
+          <div class="bar-graphs">
+            <h1>Monthly Visitors</h1>
+            <img src="img/bargraphs.png" alt="bar graphs" />
+          </div>
+
+          <div class="pie-graphs">
+            <h1>Top Genres</h1>
+            <img src="img/piegraphs.png" alt="pie graphs" />
+          </div>
         </div>
       </div>
     </div>
