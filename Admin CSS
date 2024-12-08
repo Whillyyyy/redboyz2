@@ -1,431 +1,410 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="admin.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <title>Admin</title>
-  </head>
-  <body>
-    <header class="header">
-      <!-- Logo -->
-      <h1>ADMIN</h1>
+* {
+  margin: 0;
+  padding: 0;
 
-      <!--Right Content  -->
-      <div class="right-content">
-        <!-- Notif icon -->
+}
+html {
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif, "Poppins";
+}
 
-        <!-- Admin Profile -->
-        <img src="img/profile.jpg" alt="Profile" />
+body {
+  display: flex;
+  flex-direction: column;
+}
 
-        <!-- Name -->
-        <div class="name">
-          <h4>Coronado, Earl David</h4>
-          <p>**** **** 1342</p>
-        </div>
-      </div>
-    </header>
+.header {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+  height: 60px;
+  padding: 10px 40px;
+  justify-content: space-between;
+}
 
-    <div class="hero-contents">
-      <aside class="aside">
-        <ul>
-          <li>
-            <a href="admin.html">Dashboard</a>
-          </li>
+.header h1{
+  padding-top: 13px;
+}
 
-          <li>
-            <a href="#">Issue & Return Management</a>
-          </li>
+.header img{
+    border-radius: 100%;
+    width: auto;
+    height: 60%;
+    padding: 10px 5px;
+}
 
-          <li>
-            <a href="#">Member Management</a>
-          </li>
+.right-content {
+  display: flex;
+  text-align: center;
+}
 
-          <li>
-            <a href="staff.html">Library Staff Management</a>
-          </li>
+.right-content .name {
+  padding: 15px 10px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
 
-          <li>
-            <a href="#">Feedbacks</a>
-          </li>
+.right-content .name h4 {
+  color: black;
+}
 
-          <li>
-            <a href="">Report & Logs</a>
-          </li>
-        </ul>
-      </aside>
+.right-content .name p {
+  color: black;
+  font-size: 10px;
+  margin-top: -11px;
+}
 
-      <!-- Drop Bar -->
+.dropdown{
+  display: inline-block;
+}
 
-      <!-- Records -->
 
-      <div class="main-sec">
-        <div class="box-preview">
-          <div class="total-visitors">
-            <p class="container-head">NEW VISITORS</p>
-            <div class="overview-content">
-              <h2>152</h2>
-              <!-- Visitors Percentage -->
-              <div class="percent-box">
-                <img src="img/increase.png" alt="" />
-                <p>15.5%</p>
-              </div>
-            </div>
-          </div>
-          <div class="total-visitors">
-            <p class="container-head">TOTAL BOOKS</p>
-            <div class="overview-content">
-              <h2>5612</h2>
-              <!-- Visitors Percentage -->
-              <div class="percent-box">
-                <img src="img/increase.png" alt="" />
-                <p>23.5%</p>
-              </div>
-            </div>
-          </div>
-          <div class="total-visitors">
-            <p class="container-head">BORROWED BOOKS</p>
-            <div class="overview-content">
-              <h2>172</h2>
-              <!-- Visitors Percentage -->
-              <div class="percent-box">
-                <img src="img/increase.png" alt="" />
-                <p>8.2%</p>
-              </div>
-            </div>
-          </div>
-          <div class="total-visitors">
-            <p class="container-head">OVERDUE BOOKS</p>
-            <div class="overview-content">
-              <h2>13</h2>
-              <!-- Visitors Percentage -->
-              <div class="percent-box">
-                <img src="img/decrease.png" alt="" />
-                <p>2%</p>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <!-- Tables -->
 
-        <div class="mid-container">
-          <div class="most-books">
-            <div class="most-book-title">
-              <h1>User's List</h1>
-              <a href="#" class="add-new-user"> Add New User</a>
-            </div>
+.aside {
+  padding: 20px;
+  height: 100vh;
+  width: 250px;
+  background-color: white;
+  position: sticky;
+}
 
-            <div class="user-list">
-              <div class="header-list">
-                <p>User ID</p>
-                <p>User Name</p>
-                <p>Booked Issued</p>
-                <p>Action</p>
-              </div>
+.aside ul {
+  list-style-type: none;
+}
 
-              <ul class="user-list-box">
-                <li>
-                  <p>#001</p>
-                  <div>
-                    <img
-                      src="https://images.unsplash.com/photo-1733077151631-93a7e457b97f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8"
-                      alt=""
-                      class=""
-                    />
-                    <p>Cris</p>
-                  </div>
-                  <p>12</p>
-                  <div class="">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="size-6"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
-                      />
-                    </svg>
-                  </div>
-                </li>
-                <li>
-                  <p>#143</p>
-                  <div>
-                    <img
-                      src="https://images.unsplash.com/photo-1733077151631-93a7e457b97f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8"
-                      alt=""
-                      class=""
-                    />
-                    <p>Main</p>
-                  </div>
-                  <p>12</p>
-                  <div class="">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="size-6"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
-                      />
-                    </svg>
-                  </div>
-                </li>
-                <li>
-                  <p>#091</p>
-                  <div>
-                    <img
-                      src="https://images.unsplash.com/photo-1733077151631-93a7e457b97f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8"
-                      alt=""
-                      class=""
-                    />
-                    <p>Earl</p>
-                  </div>
-                  <p>1</p>
-                  <div class="">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="size-6"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
-                      />
-                    </svg>
-                  </div>
-                </li>
-                <li>
-                  <p>#092</p>
-                  <div>
-                    <img
-                      src="https://images.unsplash.com/photo-1733077151631-93a7e457b97f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8"
-                      alt=""
-                      class=""
-                    />
-                    <p>Josh</p>
-                  </div>
-                  <p>12</p>
-                  <div class="">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="size-6"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
-                      />
-                    </svg>
-                  </div>
-                </li>
-              </ul>
-            </div>
+.aside ul li {
+  cursor: pointer;
+  padding: 15px;
+  margin-bottom: 10px;
+}
 
-            <div class="see-all">
-              <a href="#">See All</a>
-            </div>
-          </div>
+.aside ul li a {
+  color: black;
+  font-size: 16px;
+  padding: 10px;
+  text-decoration: none;
+  text-wrap: nowrap;
+  font-weight: bold;
+  font-size: .9rem;
+}
 
-          <div class="top-user">
-            <div class="most-books">
-              <div class="most-book-title">
-                <h1>Book List</h1>
-                <a href="#" class="add-new-user"> Add New Book</a>
-              </div>
+.aside ul li a:hover{
+  color: orangered;
+}
 
-              <div class="user-list">
-                <div class="header-list">
-                  <p>Book ID</p>
-                  <p>Title</p>
-                  <p>Available</p>
-                  <p>Action</p>
-                </div>
+.hero-contents {
+  position: relative;
+  background-color: #dcdcdc;
+  border: transparent;
+  display: flex;
+  border-radius: 40px 0 0 0;
+}
 
-                <ul class="user-list-box">
-                  <li>
-                    <p>#0-1432-30</p>
-                    <p>Trouble Makers</p>
-                    <p>30</p>
-                    <div class="">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="size-6"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
-                        />
-                      </svg>
-                    </div>
-                  </li>
-                  <li>
-                    <p>#0-1322-21</p>
-                    <p>Hello World Goodbye</p>
-                    <p>23</p>
-                    <div class="">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="size-6"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
-                        />
-                      </svg>
-                    </div>
-                  </li>
-                  <li>
-                    <p>#0-412-42</p>
+.main-sec .box-preview {
+  display: flex;
+}
+.main-sec .box-preview h1 {
+  font-size: 45px;
+}
 
-                    <p>Aladdin</p>
+.box-preview {
+  font-size: 13px;
+  padding-right: 115px;
+  font-weight: 500;
+}
 
-                    <p>21</p>
-                    <div class="">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="size-6"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
-                        />
-                      </svg>
-                    </div>
-                  </li>
-                  <li>
-                    <p>#0-0123-412</p>
+.main-sec {
+  flex: 1;
+  padding: 0 1px;
+  position: relative;
+}
 
-                    <p>Retribution</p>
+.main-sec .box-preview {
+  justify-content: space-between;
+  padding: 55px 20px 20px 20px;
+}
 
-                    <p>17</p>
-                    <div class="">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        class="size-6"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M6.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM12.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0ZM18.75 12a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"
-                        />
-                      </svg>
-                    </div>
-                  </li>
-                </ul>
-              </div>
+.container-head {
+  font-weight: 700;
+  font-size: 16px;
+  align-self: self-start;
+}
 
-              <div class="see-all">
-                <a href="#">See All</a>
-              </div>
-            </div>
-          </div>
-        </div>
+.total-visitors {
+  position: relative;
+  text-align: center;
+  background: white;
+  border-radius: 15px;
+  width: 20%;
+  height: 20%;
+  padding: 20px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: -7px 11px 5px -2px rgba(158,151,151,0.75);
 
-        <div class="top-books-container">
-          <h1>Top Choices</h1>
-          <div class="top-books">
-            <li>
-              <img src="img/book1.jpg" alt="" />
-              <h4>The Great Gatsby</h4>
-              <p>F. Scott Fitzgerald</p>
-            </li>
+}
+.overview-content {
+  position: relative;
+}
+.overview-content > h2 {
+  font-size: 60px;
+}
+.percent-box {
+  position: absolute;
+  top: -15px;
+  right: 5px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  border-radius: 50px;
+  padding: 6px 8px;
+  border: 1px solid black;
+}
+.percent-box > img {
+  height: 14px;
+  width: 14px;
+}
+.percent-box > p {
+  font-size: 10px;
+  color: black;
+}
 
-            <li>
-              <img src="img/book1.jpg" alt="" />
-              <h4>The Great Gatsby</h4>
-              <p>F. Scott Fitzgerald</p>
-            </li>
 
-            <li>
-              <img src="img/book1.jpg" alt="" />
-              <h4>The Great Gatsby</h4>
-              <p>F. Scott Fitzgerald</p>
-            </li>
+.total-books {
+  position: relative;
+  text-align: center;
+  background: white;
+  border: transparent;
+  border-radius: 12px;
+  width: 20%;
+  height: 20%;
+  padding: 5px 5px 0 10px;
+}
 
-            <li>
-              <img src="img/book1.jpg" alt="" />
-              <h4>The Great Gatsby</h4>
-              <p>F. Scott Fitzgerald</p>
-            </li>
+.borrowed-books {
+  position: relative;
+  text-align: center;
+  background: white;
+  border: transparent;
+  border-radius: 12px;
+  width: 20%;
+  height: 20%;
+  padding: 5px 5px 0 10px;
+}
 
-            <li>
-              <img src="img/book1.jpg" alt="" />
-              <h4>The Great Gatsby</h4>
-              <p>F. Scott Fitzgerald</p>
-            </li>
+.overdue-books {
+  position: relative;
+  text-align: center;
+  background: white;
+  border: transparent;
+  border-radius: 12px;
+  width: 20%;
+  height: 20%;
+  padding: 5px 5px 0 10px;
+}
 
-            <li>
-              <img src="img/book1.jpg" alt="" />
-              <h4>The Great Gatsby</h4>
-              <p>F. Scott Fitzgerald</p>
-            </li>
+.most-books {
+  background-color: white;
+  border: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-sizing: border-box;
+  padding: 20px;
+  margin: 0 20px;
+  border-radius: 20px;
+  width: 740px;
+  box-shadow: -7px 11px 5px -2px rgba(158,151,151,0.75);
 
-            <li>
-              <img src="img/book1.jpg" alt="" />
-              <h4>The Great Gatsby</h4>
-              <p>F. Scott Fitzgerald</p>
-            </li>
-          </div>
-        </div>
+}
 
-        <!-- graphs -->
+.mid-container {
+  display: flex;
+  position: absolute;
+  gap: 10px;
+}
 
-        <div class="graphs">
-          <div class="bar-graphs">
-            <h1>Monthly Visitors</h1>
-            <img src="img/bargraphs.png" alt="bar graphs" />
-          </div>
+.most-book-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.most-book-title h1 {
+  font-size: 24px;
+}
+.most-book-title a {
+  padding: 15px 20px;
+  border: 2px solid black;
+  border-radius: 15px;
+  color: black;
+  text-decoration: none;
+  font-size: .8rem;
+}
 
-          <div class="pie-graphs">
-            <h1>Top Genres</h1>
-            <img src="img/piegraphs.png" alt="pie graphs" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
-</html>
+.most-book-title a:hover {
+ background-color: black;
+ transition: 0.3s;
+}
+
+.most-book-title .add-new-user:hover{
+  color: white;
+  transition: 0.3s;
+}
+
+.user-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.header-list {
+  display: flex;
+  padding: 10px 20px;
+}
+
+.header-list p {
+  text-align: center;
+  flex: 1;
+}
+
+.user-list-box {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+
+.user-list-box li {
+  border-radius: 10px;
+  padding: 10px 20px;
+  display: flex;
+  text-align: right;
+}
+
+.user-list-box li:hover {
+  background-color: rgb(227, 227, 227);
+  cursor: pointer;
+}
+
+.user-list-box li > p,
+.user-list-box li > div {
+  flex: 1;
+  text-align: center;
+}
+
+.user-list-box li > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.user-list-box li > div > svg {
+  height: 25px;
+  width: 25px;
+}
+
+.user-list-box > li > div > img {
+  height: 25px;
+  width:  25px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+.mid-container .most-books .see-all {
+  text-align: right;
+  padding: 3px 15px;
+}
+.mid-container .most-books .see-all a {
+  text-decoration: none;
+  color: black;
+  font-size: .9rem;
+  font-weight: bold;
+}
+
+.top-books-container{
+  flex-direction: column;
+  position: absolute;
+  top: 40rem;
+  padding: 0 20px;
+}
+.top-books{
+  margin-top: 30px;
+  margin-bottom: 10px;
+  display: flex;
+  gap: 65px;
+}
+
+.top-books li{
+  list-style: none;
+  text-decoration: none;
+}
+
+
+.top-books li img{
+  height: 165px;
+  width: 160px;
+  border: transparent;
+  border-radius: 13px;
+  transition: transform 0.3 ease, box-shadow .3s ease;
+}
+
+.top-books li img:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 0 0.3;
+}
+
+.top-books li h4{
+  text-align: left;
+  font-size: .9rem
+}
+
+.top-books li p{
+  text-align: left;
+  font-size: .8rem;
+}
+
+.graphs {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  top: 1000px;
+  background-color: #dcdcdc;
+  width: 99.9%;
+}
+
+.graphs img {
+  position: absolute;
+  height: auto;
+  width: 600px;
+  padding: 20px 100px 90px 180px;
+}
+.bar-graphs {
+  flex-direction: column;
+  border: none;
+  border-radius: 14px;
+  padding: 20px 20px;
+  height: 400px;
+  background-color: white;
+  border-radius: 14px;
+  margin-left: 20px;
+  margin-bottom: 100px;
+  width: 700px;
+}
+
+.pie-graphs {
+  flex-direction: column;
+  border: none;
+  border-radius: 14px;
+  padding: 20px 20px;
+  height: 400px;
+  background-color: white;
+  border-radius: 14px;
+  margin-right: 20px;
+  margin-bottom: 100px;
+  width: 700px;
+}
